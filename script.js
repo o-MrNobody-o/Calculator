@@ -24,7 +24,14 @@ document.getElementById('btn-equals').addEventListener('click', Calculate)
 
 function Calculate ()
 {
-    calculation = eval(calculation) ;
+    if (calculation.replace(/\s/g, '') === "190997") 
+        {
+            calculation = "ka3bourti ❤️";
+        } 
+    else 
+        {
+            calculation = eval(calculation) ;
+        }
     saveCalculation();
     updateTextZone();
 
